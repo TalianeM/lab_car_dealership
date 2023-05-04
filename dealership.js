@@ -3,10 +3,10 @@
 
 const Car = require("./car");
 
-const Dealership = function(name, maxNoOfCars, stock){
+const Dealership = function(name, maxNoOfCars){
     this.name = name;
     this.maxNoOfCars = maxNoOfCars;
-    this.stock = stock;
+    this.stock = [];
 };
 
 // Count number of cars
@@ -17,8 +17,8 @@ Dealership.prototype.countNoOfCars = function(){
 
 // add a car to stock
 
-Dealership.prototype.addCarToStock = function(){
-    return this.addCartoStock.push(Car);
+Dealership.prototype.addCarToStock = function(car){
+    return this.stock.push(car);
 };
 
 // Return an array containing each car's manufacturer
@@ -28,10 +28,12 @@ Dealership.prototype.addCarToStock = function(){
     // use .map to source manufacturer property
     // return this.car.map 
 
-const findAllManufacturers = stock.map((manufacturer) => {
-    return this.manufacturer;
-})
+Dealership.prototype.findAllManufacturers = function(){ 
+    return this.stock.map((car) => {
+        return car.manufacturer;
     
+})
+}  
 // Find all the cars from a given manufacturer
 
     // findCarManufacturer 
@@ -47,15 +49,6 @@ const findCarManufacturer = stock.filter((manufacturer)=> {
 const totalStockValue = stock.reduce((accumulator, price) => {
         return accumulator + Car.price;  // why capital C?
 }, 0)
-
-// Total car value 
-
-    // get car object which contains price property
-    // reduce to grab sum of price value 
-    
-
-
-
 
 // exports Dealership module
 
