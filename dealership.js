@@ -44,7 +44,9 @@ const findCarManufacturer = stock.filter((manufacturer)=> {
 
 // Find total value of all cars in stock
 
-
+const totalStockValue = stock.reduce((accumulator, price) => {
+        return accumulator + Car.price;  // why capital C?
+}, 0)
 
 // Total car value 
 
