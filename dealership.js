@@ -21,12 +21,8 @@ Dealership.prototype.addCarToStock = function(car){
     return this.carStock.push(car);
 };
 
-// Return an array containing each car's manufacturer
+// Find each car's manufacturer
 
-    // findAllManufacturers
-    // get car object which contains manufacturer property
-    // use .map to source manufacturer property
-    // return this.car.map 
 
 Dealership.prototype.findAllManufacturers = function(){ 
     return this.carStock.map((car) => {
@@ -35,10 +31,6 @@ Dealership.prototype.findAllManufacturers = function(){
 })
 }  
 // Find all the cars from a given manufacturer
-
- // findCarManufacturer 
- // get car object which contains manufacturer property
- // use .filter to source manufacturer property
 
 Dealership.prototype.findCarManufacturer = function(){
     return this.carStock.filter((car) => {
@@ -52,7 +44,7 @@ const priceOfCars = function(){
     return this.carStock.map((car) => this.car.price) 
 }
 
-// // Find total value of all cars in stock
+// Find total value of all cars in stock
 
 const totalCarStockValue = ((accumulator, priceOfCars) => {
     return accumulator + priceOfCars
