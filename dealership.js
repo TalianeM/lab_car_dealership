@@ -46,15 +46,19 @@ Dealership.prototype.findCarManufacturer = function(){
     })
 }
 
-// // Find total value of all cars in stock
+// priceOfCars method ArrayList
 
 const priceOfCars = function(){
-    return this.carStock.sum(car);
+    return this.carStock.map((car) => this.car.price) 
 }
 
-const totalCarStockValue = carStock.reduce((accumulator, price) => {
-        return accumulator + carStock.price; 
-}, 0)
+// // Find total value of all cars in stock
+
+// Dealership.prototype.totalCarStockValue = priceOfCars.reduce((accumulator, priceOfCars)=> {
+//     return accumulator.priceOfCars;
+// },0)
+
+
 
 // exports Dealership module
 
