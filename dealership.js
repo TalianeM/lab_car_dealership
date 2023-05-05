@@ -54,10 +54,9 @@ const priceOfCars = function(){
 
 // // Find total value of all cars in stock
 
-// Dealership.prototype.totalCarStockValue = priceOfCars.reduce((accumulator, priceOfCars)=> {
-//     return accumulator.priceOfCars;
-// },0)
-
+const totalCarStockValue = ((accumulator, priceOfCars) => {
+    return accumulator + priceOfCars
+},0)
 
 
 // exports Dealership module
