@@ -4,14 +4,17 @@
 const { beforeEach } = require("node:test");
 const Dealership = require("./dealership");
 
-beforeEach
+beforeEach(() =>{
+    dealership = new Dealership("carShop", 24)
+}
+)
 
 // Test 1
 
-test('can count number of cars ',() => {
+test('can count number of cars',() => {
 const expected = 3; 
 const actual = dealership.countNoOfCars
-expected(actual).toBe(expected);
+expect(actual).toBe(expected);
 
 });
 

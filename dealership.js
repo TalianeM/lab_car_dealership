@@ -12,7 +12,7 @@ const Dealership = function(name, maxNoOfCars){
 // Count number of cars
 
 Dealership.prototype.countNoOfCars = function(){
-    return this.maxNoOfCars.length;
+    return this.carStock.length;
 };
 
 // add a car to stock
@@ -38,7 +38,7 @@ Dealership.prototype.findCarManufacturer = function(){
     })
 }
 
-// priceOfCars method ArrayList
+// Find priceOfCars 
 
 const priceOfCars = function(){
     return this.carStock.map((car) => this.car.price) 
