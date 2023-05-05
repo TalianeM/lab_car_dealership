@@ -10,14 +10,14 @@ test(' can get car manufacturer ',() => {
 
 }); 
 
-// Test 1 
+// Test 2
 
  
 test('can get car price ',() => { 
 
 }); 
 
-// Test 1 
+// Test 3 
 
 test('can get car manufacturer ',() => { 
 
